@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="725.0" prefWidth="836.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_restfull.controllers.StudentController">
+    <children>
+        <Button fx:id="buttonReply" layoutX="117.0" layoutY="14.0" mnemonicParsing="false" onAction="#yenile" text="temizle" />
+        <Button fx:id="buttonList" layoutX="48.0" layoutY="14.0" mnemonicParsing="false" onAction="#loadStudentsData" text="list" />
+        <TableView fx:id="tableView" layoutX="14.0" layoutY="61.0" prefHeight="468.0" prefWidth="511.0">
+            <columns>
+                <TableColumn fx:id="studentIDColumn" prefWidth="150.0" text="student id" />
+                <TableColumn fx:id="studentNameColumn" prefWidth="200.0" text="student name" />
+                <TableColumn fx:id="studentAgeColumn" prefWidth="150" text="student age" />
+            </columns>
+        </TableView>
+      <TextField fx:id="tfStudentId" layoutX="546.0" layoutY="89.0" promptText="student id" />
+      <Button fx:id="btnFindId" layoutX="723.0" layoutY="89.0" mnemonicParsing="false" onAction="#findStudentById" text="find student" />
+      <TextField fx:id="tfStudentName" layoutX="546.0" layoutY="137.0" promptText="student name" />
+      <TextField fx:id="tfStudentAge" layoutX="546.0" layoutY="189.0" promptText="student age" />
+      <Button fx:id="btnAddStudent" layoutX="723.0" layoutY="137.0" mnemonicParsing="false" onAction="#addStudent" text="add student" />
+      <Button fx:id="btnDeleteStudent" layoutX="723.0" layoutY="189.0" mnemonicParsing="false" onAction="#deleteStudent" text="delete student" />
+    </children>
+</AnchorPane>

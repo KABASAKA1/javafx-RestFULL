@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="597.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_restfull.controllers.CourseController">
+   <children>
+      <TableView fx:id="tableViewCourse" layoutX="30.0" layoutY="60.0" prefHeight="362.0" prefWidth="711.0">
+        <columns>
+          <TableColumn fx:id="courseIdColumn" prefWidth="128.46173477172852" text="course id" />
+          <TableColumn fx:id="courseNameColumn" minWidth="0.0" prefWidth="146.15411376953125" text="course name" />
+            <TableColumn fx:id="teacherIdColumn" minWidth="0.0" prefWidth="145.3848372588647" text="teacher id" />
+            <TableColumn fx:id="teacherNameColumn" minWidth="0.0" prefWidth="145.3848372588647" text="teacher name" />
+            <TableColumn fx:id="teacherAgeColumn" minWidth="0.0" prefWidth="145.3848372588647" text="teacher age" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnListAll" layoutX="250.0" layoutY="481.0" mnemonicParsing="false" onAction="#loadCoursesData" text="list all" />
+      <Button fx:id="btnClearTable" layoutX="329.0" layoutY="481.0" mnemonicParsing="false" onAction="#yenile" text="clear table" />
+      <Button fx:id="btnFindCourse" layoutX="639.0" layoutY="455.0" mnemonicParsing="false" onAction="#findCourseById" text="find course" />
+      <TextField fx:id="tfCourseId" layoutX="451.0" layoutY="455.0" promptText="course id" />
+      <TextField fx:id="tfCourseName" layoutX="451.0" layoutY="495.0" promptText="course name" />
+      <TextField fx:id="tfTeacherId" layoutX="451.0" layoutY="530.0" promptText="teacher id" />
+      <Button fx:id="btnAddCourse" layoutX="639.0" layoutY="495.0" mnemonicParsing="false" onAction="#addCourse" text="add course" />
+      <Button fx:id="btnDeleteCourse" layoutX="631.0" layoutY="530.0" mnemonicParsing="false" onAction="#deleteCourse" text="delete course" />
+   </children>
+</AnchorPane>

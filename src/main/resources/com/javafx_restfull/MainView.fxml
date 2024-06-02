@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="568.0" prefWidth="819.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_restfull.controllers.MainController">
+   <children>
+      <MenuBar fx:id="mainMenuBar" prefHeight="28.0" prefWidth="819.0">
+        <menus>
+          <Menu fx:id="studentMenuItem" mnemonicParsing="false" onAction="#loadStudentScene" text="Student">
+            <items>
+              <MenuItem mnemonicParsing="false" text="view" />
+            </items>
+          </Menu>
+          <Menu fx:id="teacherMenuItem" mnemonicParsing="false" onAction="#loadTeacherScene" text="Teacher">
+            <items>
+              <MenuItem mnemonicParsing="false" text="view" />
+            </items>
+          </Menu>
+          <Menu fx:id="courseMenuItem" mnemonicParsing="false" onAction="#loadCourseScene" text="Course">
+            <items>
+              <MenuItem mnemonicParsing="false" text="view" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="contentPane" layoutX="1.0" layoutY="28.0" prefHeight="538.0" prefWidth="819.0">
+         <children>
+            <Label layoutX="46.0" layoutY="40.0" text="School Management System" />
+            <Label layoutX="46.0" layoutY="66.0" prefHeight="18.0" prefWidth="334.0" text="please click menu item to view school count" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
